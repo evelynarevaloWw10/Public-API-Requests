@@ -2,7 +2,7 @@
 
 
 //went to const might need to change to let for var =galleryHtml & searchContainerHtml 
-const gallery = document.getElementById('gallery');   
+/*const gallery = document.getElementById('gallery');   
 const galleryHtml = `<div class="card-img-container">
                         <img class="card-img" src="https://placehold.it/90x90" alt="profile picture">
                     </div>
@@ -27,18 +27,15 @@ const searchContainerHtml = `<div class="modal">
                         <p class="modal-text">123 Portland Ave., Portland, OR 97204</p>
                         <p class="modal-text">Birthday: 10/21/2015</p>
                          </div>`;
- searchContainer.insertAdjacentHTML(beforend,searchContainerHtml);
+ *///searchContainer.insertAdjacentHTML(beforend,searchContainerHtml);
 
  
 
-fetch(`https://randomuser.me/api/?results=12&inc=name,picture,email,location,&noinfo&nat=US`)
-.then((response) => {console.log(response);
-})
-.catch((err) => {console.log('SOMETHING WENT WRONG!');
-    console.log(err);
-});
-console.log(response.statusText)
+fetch(`'https://randomuser.me/api/?results=12&inc=name,picture,email,location,&noinfo&nat=US'`)
+.then(response=> console.log(response))
+//})
+//.catch((err) => {console.log('SOMETHING WENT WRONG!');
+  //  console.log(err);
+//});
+//console.log(response.statusText)
 
-
-
-hello
